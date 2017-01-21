@@ -1,0 +1,512 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Home &mdash; Wigmore Hall &mdash; Stagecast Demo</title>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700' rel='stylesheet'>
+  <link href="http://localhost:8000/css/app.css" rel="stylesheet">
+  <link href="http://localhost:8000/css/custom.css" rel="stylesheet">
+   <link href="http://localhost:8000/css/wigmore-styles.css" rel="stylesheet">
+    <link href="http://vjs.zencdn.net/5.14.1/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/5.14.1/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/4.0.3/videojs-contrib-hls.js"></script>
+    
+
+</head>
+<body style="background: none;">
+  <div class="container" style="background-color: #eee; background-image: none; ">
+  
+    <!--
+    <header>
+      <div class="header-body">
+        <div class="header-logo"><a href="/">Wigmore Hall</a></div>
+          <div class="header-phone">
+            <p>Box Office: <a href="tel:020 7935 2141">020 7935 2141</a></p>        
+          </div>
+          <div class="header-mobile-menu">
+              <p>Menu <span class="icon-mobile-menu"></span></p>
+          </div>
+          <div class="header-sub-menu">
+            <ul class="menu">
+              <li class="nav-item"><a href="/search">Advanced Search</a></li>
+            	<li class="nav-item"><a href="/visit-us/access">Access</a></li>
+            	<li class="nav-item"><a href="/help/help">Help</a></li>
+            </ul>
+            <div class="customhtml">
+              <p><a class="rss-feed rss-news" href="/feed/news?format=feed" title="News RSS Feed"><span class="icon-feed"></span></a></p>
+            </div>
+          </div>
+          <div class="header-aux">
+            <div class="header-aux-info">
+              <div class="mod-phone">
+                <p>Box Office: <a href="tel:020 7935 2141">020 7935 2141</a></p>                
+              </div>
+              <div class="mod-social-bar">
+                <ul>
+                  <li><a rel="external" target="_blank" href="https://twitter.com/wigmore_hall" class="icon-twitter"><span>Twitter</span></a></li>             
+                  <li><a rel="external" target="_blank" href="https://en-gb.facebook.com/wigmore.hall" class="icon-facebook"><span>Facebook</span></a></li>                        
+                  <li><a rel="external" target="_blank" href="https://plus.google.com/117547481929904921660/about" class="icon-google-plus"><span>Google+</span></a></li>                        
+                  <li><a rel="external" target="_blank" href="https://www.youtube.com/user/wigmorehall" class="icon-youtube"><span>Youtube</span></a></li>                                            
+                </ul>
+            </div>
+          </div>
+          <div class="header-aux-buttons">
+            <a class="button-aggressive-cta" href="/whats-on/event-listing">Buy Tickets</a>                <a class="button-regular-cta" href="/wigmore-hall-live">Buy Music</a>                <a href="#" class="button-search"></a>
+              <form class="header-search" action="/search" method="get">
+      <div class="header-search-group">
+  		<input type="text" name="s" placeholder="Search">
+          <button type="submit" class="header-search-submit"><i class="icon-search"></i></button>
+      </div>
+</form>
+          </div>
+      </div>
+  </div>
+
+    <nav class="header-nav">
+        
+<ul class="menu">
+<li class="nav-item current active  home full-width"><a href="/">Home</a></li>
+	<li class="nav-item deeper parent"><a href="/about-us/about-us">About Us</a><div class="level-0"><ul><li class="nav-item"><a href="/about-us/about-us">About Us</a></li><li class="nav-item deeper parent"><a href="/about-us/history">History</a><ul class="level-1">
+	<li class="nav-item"><a href="/about-us/the-cupola">The Cupola</a></li>
+	<li class="nav-item"><a href="/about-us/archive">Archive</a></li>
+	<li class="nav-item"><a href="/about-us/115th-anniversary-archive-celebration">115th Anniversary Archive Celebration</a></li></ul></li><li class="nav-item  full-width"><a href="/about-us/news/">News</a></li></ul><ul><li class="nav-item deeper parent"><a href="/about-us/contact-us">Contact Us</a><ul class="level-1">
+	<li class="nav-item"><a href="/about-us/staff-and-departments">Staff and Departments</a></li>
+	<li class="nav-item"><a href="/about-us/contact-form">Contact Form</a></li></ul></li><li class="nav-item"><a href="/about-us/the-wigmore-hall-trust">The Wigmore Hall Trust</a></li><li class="nav-item deeper parent"><a href="/about-us/daytime-hire-facilities">Daytime Hire Facilities</a><ul class="level-1">
+	<li class="nav-item"><a href="/about-us/conferences-and-meetings">Conferences and Meetings</a></li>
+	<li class="nav-item"><a href="/about-us/recordings">Recordings</a></li>
+	<li class="nav-item"><a href="/about-us/filming">Filming</a></li></ul></li></ul><ul><li class="nav-item deeper parent"><a href="/about-us/new-music">New Music</a><ul class="level-1">
+	<li class="nav-item"><a href="/about-us/composer-in-residence">Composer in Residence</a></li>
+	<li class="nav-item"><a href="/about-us/new-commissions">New Commissions</a></li>
+	<li class="nav-item"><a href="/about-us/past-commissions">Past Commissions</a></li></ul></li><li class="nav-item full-width"><a href="/about-us/jobs/">Jobs</a></li><li class="nav-item"><a href="/about-us/join-the-e-list">Join the e-list</a></li></ul></div></li>
+	<li class="nav-item deeper parent full-width"><a href="/whats-on/whats-on">What's On</a><div class="level-0"><ul><li class="nav-item"><a href="/whats-on/event-listing">Event List</a></li><li class="nav-item  full-width"><a href="/whats-on/calendar">Calendar</a></li><li class="nav-item deeper parent"><a href="/wigmore-series/wigmore-series">Concert Series</a><ul class="level-1">
+	<li class="nav-item parent  wigmore_series"><a href="/wigmore-series/wigmore-series">Wigmore Series</a></li>
+	<li class="nav-item parent  artistic_series"><a href="/artistic-series/artistic-series">Artistic Series</a></li></ul></li></ul><ul><li class="nav-item deeper parent"><a href="/whats-on/whats-on">Browse Programme</a><ul class="level-1">
+	<li class="nav-item"><a href="/whats-on/monthly-concert-diaries">Monthly Concert Diaries</a></li></ul></li><li class="nav-item deeper parent"><a href="/whats-on/2016-17-wigmore-series">2016/17 Wigmore Series</a><ul class="level-1">
+	<li class="nav-item"><a href="/whats-on/autumn-2016-wigmore-series">Autumn 2016 Wigmore Series</a></li>
+	<li class="nav-item"><a href="/whats-on/spring-2017-wigmore-series">Spring 2017 Wigmore Series</a></li></ul></li></ul></div></li>
+	<li class="nav-item deeper parent"><a href="/visit-us/visit-us">Visit Us</a><div class="level-0"><ul><li class="nav-item"><a href="/visit-us/visit-us">Visit Us</a></li><li class="nav-item deeper parent"><a href="/visit-us/access">Access</a><ul class="level-1">
+	<li class="nav-item"><a href="/visit-us/inside-the-building">Inside the building</a></li>
+	<li class="nav-item"><a href="/visit-us/disabled-access-and-facilities">Disabled Access and Facilities</a></li>
+	<li class="nav-item"><a href="/visit-us/access-list">Access List</a></li>
+	<li class="nav-item  tile-grid"><a href="/visit-us/facilities-for-children-families">Facilities for Children &amp; Families</a></li>
+	<li class="nav-item  tile-grid"><a href="/visit-us/facilities-and-information-for-school-groups">Facilities and Information for School Groups</a></li>
+	<li class="nav-item full-width"><a href="/whats-on/all-forthcoming-events">Event Listing for Screenreaders</a></li></ul></li><li class="nav-item deeper parent"><a href="/visit-us/restaurant-and-bar">Restaurant and Bar</a><ul class="level-1">
+	<li class="nav-item"><a href="/visit-us/hiring-the-restaurant-bechstein-room">Hiring the Restaurant &amp; Bechstein Room</a></li></ul></li></ul><ul><li class="nav-item"><a href="/visit-us/local-accommodation">Local Accommodation</a></li><li class="nav-item"><a href="/help/faq">FAQ</a></li><li class="nav-item"><a href="/visit-us/gift-certificates">Gift Certificates</a></li></ul></div></li>
+	<li class="nav-item deeper parent  tile-grid"><a href="/support-us/support-us">Support Us</a><div class="level-0" style="left: -51.0312px;"><ul><li class="nav-item"><a href="/support-us/support-us">Support Us</a></li><li class="nav-item deeper parent"><a href="/support-us/memberships">Memberships</a><ul class="level-1">
+	<li class="nav-item"><a href="/support-us/friends-of-wigmore-hall">Friends of Wigmore Hall</a></li>
+	<li class="nav-item"><a href="/support-us/gift-memberships">Gift Memberships</a></li>
+	<li class="nav-item"><a href="/support-us/rubinstein-circle">Rubinstein Circle</a></li>
+	<li class="nav-item"><a href="/support-us/american-friends">American Friends</a></li>
+	<li class="nav-item"><a href="/support-us/mailing-list">Mailing List</a></li>
+	<li class="nav-item"><a href="/support-us/gift-aid">Gift Aid</a></li></ul></li><li class="nav-item deeper parent"><a href="/support-us/donations">Donations</a><ul class="level-1">
+	<li class="nav-item"><a href="/support-us/donate-now">Donate Now</a></li>
+	<li class="nav-item"><a href="/support-us/gifts-in-wills">Gifts in Wills</a></li>
+	<li class="nav-item"><a href="/support-us/gifts-in-memory">Gifts in Memory</a></li>
+	<li class="nav-item"><a href="/support-us/piano-fund">Piano Fund</a></li>
+	<li class="nav-item"><a href="/support-us/voices-at-wigmore">Voices at Wigmore</a></li>
+	<li class="nav-item"><a href="/support-us/support-a-concert">Support a concert</a></li>
+	<li class="nav-item"><a href="/support-us/season-patrons">Season Patrons</a></li>
+	<li class="nav-item"><a href="/support-us/chamber-music-circle">Chamber Music Circle</a></li>
+	<li class="nav-item"><a href="/support-us/string-quartet-competition-ambassadors">String Quartet Competition Ambassadors</a></li>
+	<li class="nav-item"><a href="/support-us/gifts-of-shares">Gifts of Shares</a></li></ul></li></ul><ul><li class="nav-item deeper parent  grid-view"><a href="/support-us/corporate-involvement">Corporate Involvement</a><ul class="level-1">
+	<li class="nav-item"><a href="/support-us/concert-sponsorship">Concert Sponsorship</a></li>
+	<li class="nav-item"><a href="/support-us/corporate-membership">Corporate Membership</a></li>
+	<li class="nav-item"><a href="/support-us/learning-support-corp">Learning Support</a></li>
+	<li class="nav-item"><a href="/support-us/corporate-matched-giving">Corporate Matched Giving</a></li>
+	<li class="nav-item"><a href="/support-us/our-partners">Our Partners</a></li></ul></li><li class="nav-item"><a href="/support-us/endowment-fund">Endowment Fund</a></li><li class="nav-item deeper parent"><a href="/support-us/trusts-and-foundations">Trusts and Foundations</a><ul class="level-1">
+	<li class="nav-item"><a href="/support-us/artistic-support">Artistic Support</a></li>
+	<li class="nav-item parent"><a href="/support-us/learning-support">Learning Support</a></li>
+	<li class="nav-item"><a href="/support-us/trusts-and-foundation-supporters">Our Supporters</a></li></ul></li></ul></div></li>
+	<li class="nav-item deeper parent  full-width"><a href="/wigmore-hall-live/wigmore-hall-live">Wigmore Hall Live</a><div class="level-0" style="left: -168.344px;"><ul><li class="nav-item"><a href="/wigmore-hall-live/wigmore-hall-live">Wigmore Hall Live</a></li><li class="nav-item  full-width"><a href="/wigmore-hall-live">Browse Catalogue</a></li><li class="nav-item deeper parent"><a href="/wigmore-hall-live/about-wigmore-hall-live">About Wigmore Hall Live</a><ul class="level-1">
+	<li class="nav-item"><a href="/wigmore-hall-live/distribution-retailer-information">Distribution &amp; Retailer Information</a></li>
+	<li class="nav-item"><a href="/wigmore-hall-live/contact">Contact</a></li></ul></li></ul><ul><li class="nav-item deeper parent"><a href="/wigmore-hall-live/podcasts-and-media">Podcasts and Media</a><ul class="level-1">
+	<li class="nav-item parent"><a href="/podcasts/podcasts">Podcasts</a></li></ul></li><li class="nav-item deeper parent"><a href="/wigmore-hall-live/live-stream">Live Stream</a><ul class="level-1">
+	<li class="nav-item"><a href="/wigmore-hall-live/past-live-streams">Past Live Streams</a></li></ul></li></ul></div></li>
+	<li class="nav-item deeper parent  grid-view"><a href="/learning/learning-landing-page">Learning</a><div class="level-0" style="left: -333px;"><ul><li class="nav-item"><a href="/learning/learning-landing-page">Wigmore Hall Learning</a></li><li class="nav-item deeper parent full-width"><a href="/learning/families">Families</a><ul class="level-1">
+	<li class="nav-item"><a href="/learning/family-events">Family Concerts and Events</a></li>
+	<li class="nav-item"><a href="/learning/events-for-under-5s">Events for Under 5s</a></li>
+	<li class="nav-item"><a href="/learning/chamber-zone">Chamber Zone</a></li></ul></li><li class="nav-item deeper parent  grid-view"><a href="/learning/schools-early-years">Schools &amp; Early Years</a><ul class="level-1">
+	<li class="nav-item parent"><a href="/learning/chamber-tots-in-the-community">Chamber Tots in the Community</a></li>
+	<li class="nav-item"><a href="/learning/schools-concerts">Schools Concerts</a></li>
+	<li class="nav-item parent"><a href="/learning/projects">Projects</a></li>
+	<li class="nav-item"><a href="/learning/training-opportunities">Workshops and Training Opportunities</a></li>
+	<li class="nav-item parent"><a href="/learning/resources-for-schools">Resources for Schools</a></li>
+	<li class="nav-item"><a href="/learning/chamber-zone">Chamber Zone</a></li></ul></li></ul><ul><li class="nav-item deeper parent"><a href="/learning/study-progamme">Study Programme</a><ul class="level-1">
+	<li class="nav-item"><a href="/learning/behind-the-music-series-learning">Behind the Music</a></li>
+	<li class="nav-item  grid-view"><a href="/song-competition/the-art-of-song">The Art of Song</a></li>
+	<li class="nav-item"><a href="/podcasts/andras-schiff-beethoven-lecture-recitals">Schiff Lecture Recitals</a></li></ul></li><li class="nav-item deeper parent  grid-view"><a href="/learning/young-people">Young People</a><ul class="level-1">
+	<li class="nav-item"><a href="/learning/events-for-young-people">Events for Young People</a></li>
+	<li class="nav-item"><a href="/learning/chamber-zone">Chamber Zone</a></li>
+	<li class="nav-item"><a href="/learning/young-producers">Young Producers</a></li></ul></li><li class="nav-item deeper parent  grid-view"><a href="/learning/community">Community</a><ul class="level-1">
+	<li class="nav-item"><a href="/learning/community-events">Community Events</a></li>
+	<li class="nav-item"><a href="/learning/music-for-life">Music for Life</a></li>
+	<li class="nav-item"><a href="/learning/community-projects">Community Projects</a></li>
+	<li class="nav-item"><a href="/learning/all-sing-choir">All Sing Choir</a></li></ul></li></ul><ul><li class="nav-item"><a href="/learning/about-us">About Us</a></li></ul></div></li>
+	<li class="nav-item deeper parent  full-width"><a href="/competitions/competitions">Competitions</a><div class="level-0" style="left: -436.891px;"><ul><li class="nav-item deeper parent"><a href="/song-competition/wigmore-hall-kohn-foundation-international-song-competition">Wigmore Hall/Kohn Foundation International Song Competition</a><ul class="level-1">
+	<li class="nav-item parent"><a href="/song-competition/2017-songcompetition">2017 International Song Competition</a></li>
+	<li class="nav-item"><a href="/song-competition/sponsors">Sponsors</a></li>
+	<li class="nav-item parent"><a href="/song-competition/archive">Archive</a></li>
+	<li class="nav-item"><a href="/song-competition/contact">Contact</a></li></ul></li><li class="nav-item deeper parent"><a href="/string-quartet-competition/wigmore-hall-international-string-quartet-competition">Wigmore Hall International String Quartet Competition</a><ul class="level-1">
+	<li class="nav-item"><a href="/string-quartet-competition/2018-competition">2018 International String Quartet Competition</a></li>
+	<li class="nav-item"><a href="/string-quartet-competition/sponsors-ambassadors-credits">Donors and Sponsors</a></li>
+	<li class="nav-item parent  grid-view"><a href="/string-quartet-competition/archive">Archive</a></li>
+	<li class="nav-item"><a href="/string-quartet-competition/contact">Contact</a></li></ul></li></ul></div></li>
+	<li class="nav-item deeper parent"><a href="/help/help">Help</a><div class="level-0" style="left: -571.188px;"><ul><li class="nav-item"><a href="/help/how-to-book">How To Book</a></li><li class="nav-item"><a href="/help/priority-booking-help">Priority Booking Help</a></li><li class="nav-item"><a href="/help/discounts-concessions">Discounts &amp; Concessions</a></li></ul><ul><li class="nav-item"><a href="/help/faq">FAQ</a></li><li class="nav-item"><a href="/help/policies-2">Policies</a></li><li class="nav-item"><a href="/about-us/contact-us">Contact Us</a></li></ul><ul><li class="nav-item"><a href="/help/site-map">Site Map</a></li></ul></div></li>
+	</ul>
+
+    </nav>
+
+</header>
+-->
+
+  <section class="primary-content">
+        <div class="row" style="border-bottom: #eee 3px solid">
+        <div class="small-6 medium-3 columns">
+          <a href="http://localhost:8000"><img src="http://localhost:8000/css/img/logo.png" /></a>
+        </div>
+        <div class="small-6 medium-9 columns">&nbsp;</div>
+      </div>
+
+
+                 <div class="row" id="videoplayer">
+      <div class="columns">
+        <div class="top-channel-slider">
+          <div class="topslider-item">
+       
+              <div class="large-8 columns">
+                 <a href="http://localhost:8000/watch/jack-quartet"  ><img src="http://localhost:8000/css/img/poster.jpg" /></a>
+                             </div>
+              <div class="large-4 columns foyer-caption">
+                <h3>Wigmore Hall 115th Anniversary Celebratory Concert - Jack Quartet</h3>
+     <p>JACK Quartet vists Wigmore Hall as a part of the Hall's 115th Anniversary Celebration</p>      
+                   <a href="http://localhost:8000/watch/jack-quartet" class="button-aggressive-cta">Watch Video</a>
+                   <p>&nbsp;</p>
+                  
+              </div>
+          </div>
+          <div class="topslider-item">
+           
+              <div class=" medium-8 columns">
+                     <a href="http://localhost:8000/watch/irish-gala"  ><img src="http://localhost:8000/css/img/irish-poster.jpg" /></a>              </div>
+              <div class="medium-4 columns foyer-caption">
+                <h3>Irish Culture in Britain - A Centenary Celebration</h3>
+     <p>Wigmore Hall hosted a week-long celebration of Irish culture in Britain, saluting in particular the fruitful fields of music and literature.</p>   
+               <a href="http://localhost:8000/watch/irish-gala" class="button-aggressive-cta">Watch Video</a>
+                <p>&nbsp;</p>
+              </div>
+        
+          </div>
+          <div class="topslider-item">
+              <div class="large-8 medium-8 columns">
+      <a href="http://localhost:8000/watch/berg-lecture" ><img src="http://localhost:8000/css/img/berg-poster.jpg" /></a>
+              </div>
+              <div class="large-4 medium-4 columns foyer-caption">
+                <h3>Inside the Score: Berg's Lyric Suite</h3>
+        <p>The Tana String Quartet and soprano Julia Sitkovetsky join writer and broadcaster Gavin Plumley to explore Alban Berg’s Lyric Suite for string quartet and soprano in this visually and musically illustrated lecture-recital.</p>   
+                     <a href="http://localhost:8000/watch/berg-lecture" class="button-aggressive-cta">Watch Video</a>
+                      <p>&nbsp;</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h4>Most Popular</h4>
+        <div class="owl-slider-featured">
+    <div class="slider-item">
+          <a href="http://localhost:8000/watch/berg-lecture"  ><img src="http://localhost:8000/css/img/berg-poster.jpg" /></a>
+             <a href="http://localhost:8000/watch/berg-lecture" class="button-aggressive-cta btn-block">Inside the Score: Berg's Lyric Suite</a>
+          </div>
+          <div class="slider-item">
+            <a href="http://localhost:8000/watch/irish-gala"  ><img src="http://localhost:8000/css/img/irish-poster.jpg" /></a>
+             <a href="http://localhost:8000/watch/irish-gala" class="button-aggressive-cta btn-block">Irish Culture in Britain - A Centenary Celebration</a>
+          </div>
+          <div class="slider-item">
+            <a href="http://localhost:8000/watch/jack-quartet"  ><img src="http://localhost:8000/css/img/poster.jpg" /></a>
+             <a href="http://localhost:8000/watch/jack-quartet" class="button-aggressive-cta btn-block">Wigmore Hall 115TH Anniversary Celebratory Concert - Jack Quartet</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h4>Behind the Scenes</h4>
+        <div class="owl-slider-playlist">
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=1" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=2" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=3" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=4" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=5" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=6" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=7" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=8" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=9" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+          <div class="slider-item">
+            <a href="#"  ><img src="http://placehold.it/700x300?text=10" /></a>
+             <a href="http://localhost:8000/watch" class="button-aggressive-cta btn-block">Video Title</a>
+          </div>
+        </div>
+      </div>
+    </div>                
+                
+<div class="sc-row">
+  <div class="columns">
+  <h4>Digital Concert Hall powered by <a href="http://stagecast.net" target="_blank" id="stagecast-link">Stagecast</a></h4>
+  </div>
+</div>
+  </section>
+ <!--  
+<footer>
+    <div class="footer-content">
+        <div class="row flush-column span-6">
+            <div class="footer-content-block flush-tablet-column span-6">
+                
+<ul class="menu">
+<li class="nav-item"><span class="separator">About Us</span>
+</li>
+	<li class="nav-item"><a href="/whats-on/whats-on">View Events</a></li>
+	<li class="nav-item  full-width"><a href="/about-us/news/">News</a></li>
+	<li class="nav-item"><a href="/about-us/the-wigmore-hall-trust">The Wigmore Hall Trust</a></li>
+	<li class="nav-item"><a href="/about-us/new-music">New Music</a></li>
+	<li class="nav-item"><a href="/about-us/daytime-hire-facilities">Daytime Hire Facilities</a></li>
+	<li class="nav-item"><a href="/help/policies-2">Policies, Terms and Conditions</a></li>
+	</ul>
+
+<ul class="menu">
+<li class="nav-item"><span class="separator">Visit Us</span>
+</li>
+	<li class="nav-item"><a href="/visit-us/visit-us">Directions and Travel</a></li>
+	<li class="nav-item"><a href="/visit-us/access">Access</a></li>
+	<li class="nav-item"><a href="/visit-us/restaurant-and-bar">Restaurant and Bar</a></li>
+	<li class="nav-item"><a href="/visit-us/gift-certificates">Gift Certificates</a></li>
+	</ul>
+
+            </div>
+            <div class="footer-content-block flush-tablet-column span-6">
+                
+<ul class="menu">
+<li class="nav-item"><span class="separator">Support Us</span>
+</li>
+	<li class="nav-item"><a href="/support-us/memberships">Memberships</a></li>
+	<li class="nav-item"><a href="/support-us/donations">Donations</a></li>
+	<li class="nav-item"><a href="/support-us/corporate-involvement">Corporate Involvement</a></li>
+	</ul>
+
+<ul class="menu">
+<li class="nav-item"><span class="separator">Wigmore Hall Live</span>
+</li>
+	<li class="nav-item full-width"><a href="/wigmore-hall-live">Browse Catalogue</a></li>
+	<li class="nav-item"><a href="/podcasts/podcasts">Podcasts and Media</a></li>
+	<li class="nav-item"><a href="/wigmore-hall-live/about-wigmore-hall-live">About Wigmore Hall Live</a></li>
+	</ul>
+
+            </div>
+        </div>
+        <div class="row flush-column span-6">
+            <div class="footer-content-block flush-tablet-column span-6">
+                
+<ul class="menu">
+<li class="nav-item"><span class="separator">Learning</span>
+</li>
+	<li class="nav-item"><a href="/learning/families">Families</a></li>
+	<li class="nav-item"><a href="/learning/community">Community</a></li>
+	<li class="nav-item"><a href="/learning/schools-early-years">Schools and Early Years</a></li>
+	<li class="nav-item"><a href="/learning/young-people">Young People</a></li>
+	<li class="nav-item"><a href="/learning/study-progamme">Study Programme</a></li>
+	</ul>
+
+<ul class="menu">
+<li class="nav-item"><span class="separator">Competitions</span>
+</li>
+	<li class="nav-item"><a href="/song-competition/wigmore-hall-kohn-foundation-international-song-competition">International Song Competition</a></li>
+	<li class="nav-item"><a href="/string-quartet-competition/wigmore-hall-international-string-quartet-competition">International String Quartet Competition</a></li>
+	</ul>
+
+<ul class="menu">
+<li class="nav-item"><span class="separator">Help</span>
+</li>
+	<li class="nav-item"><a href="/help/help">FAQ</a></li>
+	<li class="nav-item"><a href="/help/how-to-book">How to Book</a></li>
+	<li class="nav-item"><a href="/help/discounts-concessions">Discounts &amp; concessions</a></li>
+	<li class="nav-item parent full width"><a href="/concert-promoter-information/concert-promoter-information">For Promoters</a></li>
+	</ul>
+
+            </div>
+            <div class="footer-content-block flush-tablet-column span-6">
+                <h3>Box Office</h3>
+                <div class="footer-contact">
+                    <p>Call our box office now on <span class="footer-tel">020 7935 2141</span></p>                    <p><a href="mailto:boxoffice@wigmore-hall.org.uk">Contact us by email</a></p>                </div>
+                                    
+<div id="system-message-container">
+</div>
+                                
+
+<form class="newsletter-sign-up" method="post" action="">
+	<h3>Join the e-list</h3>
+	
+    <div class="newsletter-error-message hide">
+        <p>Please ensure to fill in all the fields</p>
+    </div>
+        		<p>Sign up for news &amp; special offers</p>
+		<div class="form-field">
+			<label for="newsletter-sign-up-sPrefix">Prefix <span class="formRequired">*</span></label>
+			<select id="newsletter-sign-up-sPrefix" name="sPrefix" class="required custom-select">
+	<option value="" selected="selected">-Select a title-</option>
+	<option value="Mr.">Mr.</option>
+	<option value="Mrs.">Mrs.</option>
+	<option value="Miss">Miss</option>
+	<option value="Ms.">Ms.</option>
+	<option value="Dr.">Dr.</option>
+	<option value="1st Lt">1st Lt</option>
+	<option value="2nd Lt">2nd Lt</option>
+	<option value="Alderman">Alderman</option>
+	<option value="Ambassador">Ambassador</option>
+	<option value="Baroness">Baroness</option>
+	<option value="Bishop">Bishop</option>
+	<option value="Brig. Gen.">Brig. Gen.</option>
+	<option value="Brother">Brother</option>
+	<option value="Canon">Canon</option>
+	<option value="Cantor">Cantor</option>
+	<option value="Capt.">Capt.</option>
+	<option value="Cardinal">Cardinal</option>
+	<option value="Cmdr.">Cmdr.</option>
+	<option value="Col.">Col.</option>
+	<option value="Colonel">Colonel</option>
+	<option value="Comte">Comte</option>
+	<option value="Councellor">Councellor</option>
+	<option value="Count">Count</option>
+	<option value="Countess">Countess</option>
+	<option value="Dame">Dame</option>
+	<option value="Dean">Dean</option>
+	<option value="Dowager Viscountess">Dowager Viscountess</option>
+	<option value="Drs.">Drs.</option>
+	<option value="Earl">Earl</option>
+	<option value="Father">Father</option>
+	<option value="Fr.">Fr.</option>
+	<option value="Gen.">Gen.</option>
+	<option value="H.R.H.">H.R.H.</option>
+	<option value="Herr">Herr</option>
+	<option value="Hon.">Hon.</option>
+	<option value="Ing.">Ing.</option>
+	<option value="Judge">Judge</option>
+	<option value="Justice">Justice</option>
+	<option value="Lady">Lady</option>
+	<option value="Lord">Lord</option>
+	<option value="Lt.">Lt.</option>
+	<option value="Lt. Cmdr.">Lt. Cmdr.</option>
+	<option value="Lt. Col.">Lt. Col.</option>
+	<option value="Maestro">Maestro</option>
+	<option value="Maj. Gen.">Maj. Gen.</option>
+	<option value="Major">Major</option>
+	<option value="Mme.">Mme.</option>
+	<option value="Mms.">Mms.</option>
+	<option value="Monsignor">Monsignor</option>
+	<option value="Professor">Professor</option>
+	<option value="Rabbi">Rabbi</option>
+	<option value="Rear Adm.">Rear Adm.</option>
+	<option value="Representative">Representative</option>
+	<option value="Revd Canon">Revd Canon</option>
+	<option value="Reverend">Reverend</option>
+	<option value="Sen.">Sen.</option>
+	<option value="Senator">Senator</option>
+	<option value="Sgt.">Sgt.</option>
+	<option value="Signor">Signor</option>
+	<option value="Signora">Signora</option>
+	<option value="Sir">Sir</option>
+	<option value="Sister">Sister</option>
+	<option value="Sr.">Sr.</option>
+	<option value="The Right Hon.">The Right Hon.</option>
+	<option value="The Rt. Rev.">The Rt. Rev.</option>
+	<option value="Very Reverend">Very Reverend</option>
+	<option value="Vice Adm.">Vice Adm.</option>
+	<option value="Viscount">Viscount</option>
+	<option value="Warrant Officer">Warrant Officer</option>
+</select>
+		</div>
+		<div class="form-field">
+			<label for="newsletter-sign-up-sFirstName">First name <span class="formRequired">*</span></label>
+			<input type="text" name="sFirstName" id="newsletter-sign-up-sFirstName" class="inputbox required validate-firstname" placeholder="First name">
+		</div>
+		<div class="form-field">
+			<label for="newsletter-sign-up-sLastName">Last name <span class="formRequired">*</span></label>
+			<input type="text" name="sLastName" id="newsletter-sign-up-sLastName" class="inputbox required validate-lastname" placeholder="Last name">
+		</div>
+		<div class="form-field">
+			<label for="newsletter-sign-up-sEmail">Email <span class="formRequired">*</span></label>
+			<input type="text" name="sEmail" id="newsletter-sign-up-sEmail" class="inputbox required validate-email" placeholder="Email Address">
+		</div>
+		<div class="form-field submit">
+		<input type="submit" name="signup" class="button-aggressive-cta" value="Sign up">
+	</div>
+	<div class="hidden-fields">
+		<input type="hidden" name="option" value="com_tessitura_bridge">
+		<input type="hidden" name="task" value="newsletterSignUp">
+	</div>
+</form>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer-info">
+        <div class="content-wrapper row">
+            <div class="footer-logos grid-column span-6">
+                <ul>
+                    <li><img src="http://localhost:8000/images/footer_logos/Left_DCMS.png" alt="Department for Culture Media &amp; Sport"></li>                    <li><img src="http://localhost:8000/images/footer_logos/Middle_Lottery.png" alt="Lottery Funded"></li>                    <li><img src="http://localhost:8000/images/footer_logos/Right_ACE.png" alt="Arts Council England"></li>                </ul>
+            </div>
+            <div class="footer-info-content grid-column span-6">
+                <div class="mod-social-bar content-align-right">
+                    <ul>
+                                                <li><a rel="external" target="_blank" href="https://twitter.com/wigmore_hall" class="icon-twitter"><span>Twitter</span></a></li>                        <li><a rel="external" target="_blank" href="https://en-gb.facebook.com/wigmore.hall" class="icon-facebook"><span>Facebook</span></a></li>                        <li><a rel="external" target="_blank" href="https://plus.google.com/117547481929904921660/about" class="icon-google-plus"><span>Google+</span></a></li>                        <li><a rel="external" target="_blank" href="https://www.youtube.com/user/wigmorehall" class="icon-youtube"><span>Youtube</span></a></li>                                            </ul>
+                    <p>© WIGMORE HALL 2016 | COMPANY REGISTERED IN ENGLAND NO. 2754525<br>REGISTERED CHARITY NO. 1024838 | VAT NO. 625680628</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  -->
+  </div>
+
+    <script src="http://localhost:8000/js/jquery.js"></script>
+    <script src="http://localhost:8000/js/what-input.js"></script>
+    <script src="http://localhost:8000/js/foundation.min.js"></script>
+    <script src="http://localhost:8000/js/owl-carousel.js"></script>
+    <script src="http://localhost:8000/js/app.js"></script>
+  </body>
+</html>
